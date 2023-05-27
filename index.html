@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Luff</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/vrstyle.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+
+    <link href="css/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<div class="hidden_box">
+	<div class="inside"></div>
+</div>
+
+<body class="landing">
+
+	<div id="wrap">
+		<div id="main">
+			<header id="header">
+				<nav class="navbar navbar-inverse navbar-custom">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+							 aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							</button>
+
+						</div>
+
+						<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="index.html">Home</a></li>
+								<!--
+								<li><a href="upload.html">Upload</a></li>
+-->
+							</ul>
+
+							<ul class="nav navbar-nav navbar-right">
+								<!--
+								<li><a href="#"><span onclick="openNav_login()"><div id="username">Login/Sign Up</div></span></a></li>
+-->
+								<li class="active"><a href="aboutus.html"></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+			<section>
+
+				<div class="container">
+					<div class="row">
+						<div class="form-wrapper">
+							<div class="col-sm-12 col-md-12 no-padding">
+								<h1 class="title-1">Luff</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row">
+						<div class="gif-div">
+								<div class="col-xs-12 col-sm-12 col-md-12 no-padding">
+									<img class="gif-img" src="img/giphy.gif"></img>
+								</div>
+
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+		</div>
+	</div>
+
+</body>
+<footer class="footer">
+	<div class="container">
+		<div class="row vcenter">
+			<div class="col-xs-12">
+				<p>Copyright &copy;2019 luff Inc.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script>
+	function openNav_aboutus() {
+		document.getElementById("mysidenav_aboutus").style.width = "100%";
+	}
+	function closeNav_aboutus() {
+		document.getElementById("mysidenav_aboutus").style.width = "0";
+	}
+
+	function openNav_login() {
+		document.getElementById("mysidenav_login").style.width = "350px";
+	}
+	function closeNav_login() {
+		document.getElementById("mysidenav_login").style.width = "0";
+	}
+
+</script>
+
+<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		$('input,textarea').focus(function () {
+			$(this).data('placeholder', $(this).attr('placeholder'))
+			$(this).attr('placeholder', '');
+		});
+		$('input,textarea').blur(function () {
+			$(this).attr('placeholder', $(this).data('placeholder'));
+		});
+	}
+
+</script>
+
+
+
+
+
+
+</html>
